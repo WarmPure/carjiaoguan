@@ -1,0 +1,14 @@
+/**
+* @author 82094
+* @date 2019/11/27
+* @Description:公共样式
+*/
+
+//解决el-table错位问题
+.el-table th.gutter{
+  display: table-cell!important;
+}
+
+.wh-table{
+
+}

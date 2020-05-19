@@ -1,0 +1,152 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+$--color-primary: #5CA7DB;
+$--color-warning: #F5A623;
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.el-step__icon{
+  display: flex !important;
+}
+
+.login-input{
+  input{
+    border: none
+  }
+}
+
+.el-tree-node__content{
+  min-height: 26px;
+  height: auto;
+}
+
+.el-table{
+  thead{
+    color: #FFFFFF;
+  }
+  td{
+    padding: 5px 0px;
+  }
+  th{
+    background-color: #5CA7DB ;
+    line-height: 24px;
+  }
+}
+
+.el-table--border{
+  border-right: 1px solid #EBEEF5;
+  th{
+    padding: 6px 0px;
+    line-height: 24px;
+  }
+  th,td{
+    border-right: none;
+    .cell{
+      font-weight: initial !important;
+    }
+  }
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+  background-color:  #F6F6F6;
+}
+.el-table--enable-row-hover .el-table__body tr:hover > td{
+  background-color:  rgba(65,192,255,0.10);
+}
+
+.main{
+  >.el-card__body{
+    padding: 0;
+  }
+}
+
+.el-card__header{
+  padding: 12px 20px;
+}
+
+.el-table--border2{
+  th{
+    background-color: #EFEFEF !important;
+    line-height: 24px;
+  }
+  thead{
+    color: #4A4A4A!important;
+  }
+}
+.current-row{
+
+}
+
+
+.el-submenu__title{
+  background-color: #2B333E;
+  color: $menuText;
+}
+.el-submenu.is-active .el-submenu__title{
+  background-color: $subMenuHover !important;
+}
+.el-menu{
+  background-color: #2B333E;
+  .el-menu-item{
+    color: #FFFFFF !important;
+    .el-submenu.is-active.is-opened{
+      .el-submenu__title{
+        background-color: $subMenuHover !important;
+      }
+    }
+  }
+  .el-menu-item:hover{
+    background-color: #222933;
+    color: #FFFFFF;
+  }
+  .el-menu-item.is-active{
+    background-color: $subMenuHover !important;
+    color: #5CA7DB;
+    .el-submenu__title{
+      color: rgba(255, 255, 255, .67) !important;
+      background-color: $subMenuHover !important;
+      span {
+        color: rgba(255, 255, 255, .67);
+      }
+    }
+  }
+  .el-submenu__title:hover{
+    background-color: $subMenuHover;
+  }
+}
+
+
+
+.el-dialog__header{
+  padding: 15px !important;
+  background-color: #5CA7DB;
+  .el-dialog__title{
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  .el-dialog__headerbtn .el-dialog__close{
+    color: #FFFFFF;
+  }
+}
+
+
+
+
+//.sidebar-container .wh-menu.el-menu .el-menu-item.is-active {
+//  position: relative;
+//  background: #222933 !important;
+//  color: #5CA7DB !important;
+//}
+//.el-menu .el-menu-item.is-active {
+//  background-color: #222933 !important;
+//  color: #5CA7DB;
+//}
+//.full-mode .nest-menu .el-submenu > .el-submenu__title, .full-mode .el-submenu .el-menu-item {
+//  min-width: 220px !important;
+//  background-color: #2B333E !important;
+//}
